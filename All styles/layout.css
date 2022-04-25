@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.layout{
+    display: flex;
+}
+
+.layout__left-block{
+    width: 35%;
+    height: auto;
+    background: url('https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png') 50% no-repeat;
+    background-size: cover;
+}
+.layout__left-block img{
+    width: 100%;
+    height: 100%;
+}
+.layout__right-block{
+    width: 65%;
+    background-color: #000;
+    color: aliceblue;
+    padding: 20px;
+}
+.title_site{
+    font-size: 40px;
+}
+
+.layout__registration{
+    width: 30%;
+    justify-content: start;
+}
+
+.verificat{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-radius: 25px;
+    color: #000;
+    margin-bottom: 15px;
+
+}
+.icons{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+
+.icons > img{
+    width: 10%;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+.icons > span{
+    font-size: 12px;
+    width: 80%;
+    margin-left: 10px;
+    padding-top: 10px;
+    color: #000;
+}
+
+.and{
+    display: flex;
+}
+
+.line{
+    width: 45%;
+}
+.with_email-regis{
+    background-color: rgb(29, 155, 240);
+}
+.with_email-regis > a > span{
+    color: white;
+}
+.agreeds{
+    font-size: 12px;
+    color: #71767B;
+}
+.agreeds__color{
+    color: #1D9BF0;
+}
+.layout_sign-in{
+    margin-top: 50px;
+}
+.btn{
+    background-color: #000;
+    color: #1D9BF0;
+
+}
+.footer{
+    background-color: #000;
+    text-align: center;
+    height: 60px;
+}
+
+.footer > a >span{
+    color: #71767B;
+    margin: 10px 7px;
+}
