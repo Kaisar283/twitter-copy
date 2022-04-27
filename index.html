@@ -7,6 +7,11 @@
     <title>Twitter</title>
     <link rel="stylesheet" href="All styles/layout.css">
     <link rel="stylesheet" href="All styles/brand.css">
+    <link rel="stylesheet" href="prkt bootstrap/styleFotboot.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src= " https://use.fontawesome.com/ba8a3585d1.js "></script>
 </head>
 <body>
@@ -27,38 +32,100 @@
 
             <div class="layout__registration">
 
-                <div class="verificat" role="button">
-                    <a href="#">
-                        <div class="icons">
-                            <img src="svg/google.svg" alt="">
-                            <span>Регистрация с помощью ...</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="verificat">
-                    <a href="#">
-                        <div class="icons">
-                            <img src="https://cdn-icons-png.flaticon.com/512/160/160139.png" alt="">
-                            <span>Зарегистрироваться с учетной записью Apple</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="and">
+                <button type="button" class="btn btn-light btn-100">
+                    <div class="icons">
+                        <img src="svg/google.svg" alt="">
+                        <span>Регистрация с помощью google</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-light btn-100">
+                    <div class="icons">
+                        <img src="svg/apple-seeklogo.com.svg" alt="">
+                        <span>Sign in with Apple</span>
+                    </div>
+                </button>
+                <div class="separate">
                     <div class="line">
+                        <div class="line-ins"></div>
                     </div>
-                    <div style="border-bottom: 1px solid grey;"></div>
-                    <div></div>
                     <div>
-                        <span>или</span>
+                        <span style="color: white;">or</span>
                     </div>
-                    <div class="line"></div>
+                    <div class="line">
+                        <div class="line-ins"></div>
+                    </div>
                 </div>
+                <button id="button_to_reg" type="button" class="btn btn-light btn-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="icons">
+                        <span>Sign up with phone or email</span>
+                    </div>
+                </button>
 
-                <div class="verificat with_email-regis">
-                    <a href="#">
-                        <span>Зарегистрируйтесь с помощью </span>
-                    </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background-color:black; border-radius:20px">
+                            <div class="modal-header" style="border: 0px;">
+                                <img src="svg/twitter.svg" alt="">
+                            </div>
+                            <div class="modal-body modal-body-content">
+                                <h1 class="title-text">Create your account</h1>
+                                <form class="g-3 needs-validation" novalidate>
+                                    <div class="form-inputs">
+                                        <div class="form_inputs_layout">
+                                            <input type="text" class="input-setting" placeholder="Name">
+                                        </div>
+                                        <div class="form_inputs_layout">
+                                            <input type="text" class="input-setting" placeholder="Phone">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-dropdowns">
+                                        <div class="dropdown">
+                                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropdown button
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+     
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="agreeds">
@@ -96,5 +163,6 @@
             <a href="#"><span> Twitter,Inc,2022.</span></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
